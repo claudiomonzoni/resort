@@ -3,8 +3,8 @@ import { createClient } from "contentful";
 
 // exportamos nuestra function
 export default createClient({
-  space: "hjrkbd75cdh0",
-  accessToken: "sHFdn-BxrveDLa3cJuGnXUIuZVsZa5XmXFI9FHiFMnQ"
+  space: process.env.REACT_APP_API_SPACE,
+  accessToken: process.env.REACT_APP_API_TOKEN
 });
 // traido de la pagina de contenful
 // const contentful = require('contentful')
